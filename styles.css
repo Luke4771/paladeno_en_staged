@@ -7,7 +7,7 @@
   --bg-base:        #030712;
   --bg-surface:     #111827;
   --accent:         #2563eb;
-  --accent-glow:    rgba(37,99,235,0.5);
+  --accent-glow:    rgba(255,255,255,0.12);
   --font-sans:      "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display:   "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-logo:      "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -85,7 +85,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   width: 800px;
   height: 600px;
   background: radial-gradient(circle at 50% 0%, var(--accent-glow) 0%, transparent 50%);
-  opacity: 0.4;
+  opacity: 0.25;
   filter: blur(48px);
   border-radius: 50%;
 }
@@ -199,7 +199,7 @@ main::after {
   position: absolute;
   left: 0; right: 0; bottom: 0;
   height: 60%;
-  background: linear-gradient(to bottom, transparent, rgba(37,99,235,0.05));
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.02));
   pointer-events: none;
   z-index: -1;
 }
@@ -224,9 +224,9 @@ main::after {
   gap: 0.5rem;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  border: 1px solid rgba(59,130,246,0.3);
-  background: rgba(59,130,246,0.1);
-  color: #93c5fd;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.06);
+  color: #d1d5db;
   font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -258,7 +258,7 @@ main::after {
 @media (min-width: 1024px) { .hero h1 { font-size: 6.5rem; } }
 
 .text-gradient {
-  background: linear-gradient(to right, #fff, #bfdbfe, #3b82f6);
+  background: linear-gradient(to right, #fff, #d1d5db, #9ca3af);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -329,7 +329,7 @@ main::after {
 
 .hero-icon {
   position: absolute;
-  color: rgba(147, 197, 253, 0.18);
+  color: rgba(255, 255, 255, 0.12);
 }
 
 .hero-dot {
@@ -337,7 +337,7 @@ main::after {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background: rgba(147, 197, 253, 0.25);
+  background: rgba(255, 255, 255, 0.2);
   animation: twinkle 3s ease-in-out infinite;
 }
 .hero-dot-1 { top: 15%; left: 8%;  animation-delay: 0.5s; }
@@ -625,15 +625,13 @@ footer {
   background: var(--bg-base);
   position: relative;
   z-index: 20;
-  border-radius: 2rem 2rem 0 0;
-  margin-top: -2rem;
 }
 .footer-inner {
   max-width: 80rem;
   margin-inline: auto;
-  padding: 2.5rem 1.25rem 0;
+  padding: 0 1.25rem;
 }
-@media (min-width: 768px) { .footer-inner { padding: 4rem 1.5rem 0; } }
+@media (min-width: 768px) { .footer-inner { padding: 0 1.5rem; } }
 
 .footer-grid {
   display: grid;
@@ -696,14 +694,13 @@ footer {
   padding: 1.25rem 0;
   border-top: 1px solid rgba(255,255,255,0.05);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   font-size: 0.875rem;
   color: #6b7280;
 }
-@media (min-width: 768px) { .footer-bottom { flex-direction: row; } }
 
 .footer-bottom-links { display: flex; gap: 1.5rem; }
 .footer-bottom-links a { color: #6b7280; transition: color .2s; }
