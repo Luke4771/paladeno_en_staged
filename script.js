@@ -7,6 +7,7 @@ const iconClose   = document.getElementById('icon-close-menu');
 if (hamburger && mobileMenu) {
   hamburger.addEventListener('click', () => {
     const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.classList.toggle('is-open', isOpen);
     if (iconMenu)  iconMenu.style.display  = isOpen ? 'none'  : 'block';
     if (iconClose) iconClose.style.display = isOpen ? 'block' : 'none';
   });
@@ -15,6 +16,7 @@ if (hamburger && mobileMenu) {
   mobileMenu.querySelectorAll('a, button').forEach(el => {
     el.addEventListener('click', () => {
       mobileMenu.classList.remove('open');
+      hamburger.classList.remove('is-open');
       if (iconMenu)  iconMenu.style.display  = 'block';
       if (iconClose) iconClose.style.display = 'none';
     });
@@ -194,6 +196,7 @@ function openModal() {
   // Close mobile menu if open
   if (mobileMenu && mobileMenu.classList.contains('open')) {
     mobileMenu.classList.remove('open');
+    if (hamburger) hamburger.classList.remove('is-open');
     if (iconMenu)  iconMenu.style.display  = 'block';
     if (iconClose) iconClose.style.display = 'none';
   }
