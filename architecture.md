@@ -23,6 +23,10 @@
 - Landing pages preload the local Inter font file, then load `styles.css`.
 - `styles.css` defines `@font-face` with `font-display: swap`.
 - CSS, JS and font URLs use a `?v=20260226` suffix for cache busting.
+- IDE preview layout note: `.ide-editor` is a vertical flex container and `.code-area` uses `min-height: 0` so mobile can shrink code content without clipping the terminal.
+- Mobile terminal layout note: `.term-content[data-term="terminal"]` uses compact vertical spacing and clears inline top margins so the last prompt line stays visible inside the fixed-height terminal.
+- Terminal cursor note: `.term-cursor` uses `em` sizing so cursor height follows terminal font size on mobile and desktop.
+- Legal page layout note: `.legal-doc main` centers `.legal-page` vertically via flex alignment, while `.legal-page` uses compact symmetric padding.
 - Result: first paint can happen with fallback font, then Inter swaps in when ready.
 
 ## 5. Behavior layer
