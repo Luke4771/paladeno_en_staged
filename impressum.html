@@ -15,18 +15,26 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <!-- ====== Header ====== -->
-    <header class="header">
-      <nav class="header__inner container">
-        <a href="index.html" class="logo" aria-label="Paladeno Home">
-          <img class="logo__image" src="images/logo.svg" alt="Paladeno" />
-          <span class="logo__wordmark" aria-hidden="true">Paladeno</span>
+
+    <!-- ── Navbar ────────────────────────────────────────────────────────── -->
+    <nav>
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo" aria-label="Paladeno Home">
+          <img class="nav-logo__image" src="images/logo.svg" alt="" width="256" height="256" />
+          <span>Paladeno</span>
         </a>
-        <div class="header__actions">
-          <a href="de/impressum.html" class="header__lang" aria-label="Deutsche Version">DE</a>
+        <div class="nav-links">
+          <a href="de/impressum.html" class="nav-lang">DE</a>
         </div>
-      </nav>
-    </header>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+          <svg id="icon-open-menu" width="24" height="24"><use href="#icon-menu"/></svg>
+          <svg id="icon-close-menu" width="24" height="24" style="display:none"><use href="#icon-x"/></svg>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="de/impressum.html">Deutsch</a>
+      </div>
+    </nav>
 
     <main id="main-content" class="container legal-page">
       <div class="legal-layout">
