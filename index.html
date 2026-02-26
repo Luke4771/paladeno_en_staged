@@ -1,143 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Paladeno – Web Design for Professionals</title>
-    <meta
-      name="description"
-      content="Fast, cookie-free websites built for performance and SEO. No bloat, no trackers, no maintenance headaches."
-    />
-    <meta property="og:title" content="Web Design for Professionals" />
-    <meta
-      property="og:description"
-      content="Fast, cookie-free websites built for performance and SEO."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="en" />
-    <meta property="og:url" content="https://paladeno.at/" />
-    <meta property="og:site_name" content="Paladeno" />
-    <meta property="og:image" content="https://paladeno.at/images/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Paladeno - Web Design for Professionals" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Paladeno - Web Design for Professionals" />
-    <meta name="twitter:description" content="Fast, cookie-free websites built for performance and SEO." />
-    <meta name="twitter:image" content="https://paladeno.at/images/og-image.png" />
-    <link rel="alternate" hreflang="en" href="https://paladeno.at/" />
-    <link rel="alternate" hreflang="de" href="https://paladeno.at/de/" />
-    <link rel="icon" href="images/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=4" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paladeno – Web Design for Professionals</title>
+  <meta name="description" content="Fast, cookie-free websites built for performance and SEO. No bloat, no trackers, no maintenance headaches." />
+  <meta property="og:title" content="Web Design for Professionals" />
+  <meta property="og:description" content="Fast, cookie-free websites built for performance and SEO." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:url" content="https://paladeno.at/" />
+  <meta property="og:site_name" content="Paladeno" />
+  <meta property="og:image" content="https://paladeno.at/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Paladeno - Web Design for Professionals" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Paladeno - Web Design for Professionals" />
+  <meta name="twitter:description" content="Fast, cookie-free websites built for performance and SEO." />
+  <meta name="twitter:image" content="https://paladeno.at/images/og-image.png" />
+  <link rel="alternate" hreflang="en" href="https://paladeno.at/" />
+  <link rel="alternate" hreflang="de" href="https://paladeno.at/de/" />
+  <link rel="icon" href="images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=4" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-    <!-- ====== Header ====== -->
-    <header class="header">
-      <nav class="header__inner container">
-        <a href="index.html" class="logo" aria-label="Paladeno Home">
-          <img class="logo__image" src="images/logo.svg" alt="Paladeno" />
-          <span class="logo__wordmark" aria-hidden="true">Paladeno</span>
-        </a>
-        <div class="header__actions">
-          <a href="mailto:contact@paladeno.com" class="header__contact">Contact</a>
-          <a href="de/index.html" class="header__lang" aria-label="Deutsche Version">DE</a>
-        </div>
-      </nav>
-    </header>
+<!-- SVG sprite (Lucide-style icons) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="2" y1="12" x2="22" y2="12"></line>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+  </symbol>
+  <symbol id="icon-code2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m18 16 4-4-4-4"></path>
+    <path d="m6 8-4 4 4 4"></path>
+    <path d="m14.5 4-5 16"></path>
+  </symbol>
+  <symbol id="icon-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+  </symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="4" y1="12" x2="20" y2="12"></line>
+    <line x1="4" y1="6"  x2="20" y2="6"></line>
+    <line x1="4" y1="18" x2="20" y2="18"></line>
+  </symbol>
+  <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="18" y1="6"  x2="6"  y2="18"></line>
+    <line x1="6"  y1="6"  x2="18" y2="18"></line>
+  </symbol>
+</svg>
 
-    <main id="main-content">
-      <!-- ====== Hero ====== -->
-      <section class="hero section" id="hero">
-        <div class="hero-wireframe" aria-hidden="true">
-          <svg class="hero-wireframe__svg" viewBox="0 0 1600 900" preserveAspectRatio="none" focusable="false">
-            <line class="hero-wireframe__line hero-wireframe__line--primary" x1="0" y1="350" x2="1600" y2="350" />
-            <circle class="hero-wireframe__node--primary-a" cx="800" cy="350" r="1.5" />
-            <circle class="hero-wireframe__node--primary-b" cx="980" cy="350" r="1.5" />
-          </svg>
-        </div>
-        <div class="container">
-          <div class="hero__content">
-            <p class="hero__kicker hero-reveal hero-reveal--1">TAILORED WEB DESIGN FOR PROFESSIONALS</p>
-            <h1 class="hero-reveal hero-reveal--2">
-              <span class="hero__line-bright">Built with precision.</span>
-              <span class="hero__line-dim">Designed to turn visitors into <span class="hero__keyword-gradient">inquiries.</span></span>
-            </h1>
-            <p class="hero__subtitle hero-reveal hero-reveal--3">No WordPress. No templates. <span class="hero__subtitle-accent">Just you.</span></p>
-          </div>
-        </div>
-      </section>
+<div id="root-wrap">
 
-      <!-- ====== USP Stats ====== -->
-      <section class="benefits section">
-        <div class="container">
-          <div class="benefits__stats" aria-label="Key metrics">
-            <div class="benefits__stat is-open">
-              <span class="benefits__stat-value hero-reveal hero-reveal--4">Sub-1s loads</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--5">Lightweight code</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail benefits__detail--intro-reveal is-open" aria-hidden="false">
-                <ul class="benefits__detail-list hero-reveal hero-reveal--5">
-                  <li>Your site loads instantly. Faster than WordPress or Wix.</li>
-                  <li>This reduces bounce rates and increases the chance of inquiries.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="benefits__stat">
-              <span class="benefits__stat-value hero-reveal hero-reveal--6">Zero tracking</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--7">Cookie-less by default</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail" aria-hidden="true">
-                <ul class="benefits__detail-list">
-                  <li>No hidden trackers or unnecessary third-party scripts.</li>
-                  <li>In many cases, no cookie banner is required.</li>
-                  <li>Privacy-compliant by design, not just a disclaimer.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="benefits__stat">
-              <span class="benefits__stat-value hero-reveal hero-reveal--8">Search-ready</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--9">Clean semantics</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail" aria-hidden="true">
-                <ul class="benefits__detail-list">
-                  <li>Technical SEO foundation for visibility.</li>
-                  <li>Structured so Google can understand your offerings precisely.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="benefits__stat">
-              <span class="benefits__stat-value hero-reveal hero-reveal--10">Low maintenance</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--11">No plugins to update</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail" aria-hidden="true">
-                <ul class="benefits__detail-list">
-                  <li>No plugin chains that require ongoing maintenance.</li>
-                  <li>Predictable costs without a maintenance routine.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- ── Background Elements ───────────────────────────────────────────── -->
+  <div id="bg-layer">
+    <div class="bg-glow"></div>
+  </div>
 
-    </main>
+  <!-- ── Navbar ────────────────────────────────────────────────────────── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Paladeno Home">
+        <img class="nav-logo__image" src="images/logo.svg" alt="" />
+        <span>Paladeno</span>
+      </a>
 
-    <!-- ====== Footer ====== -->
-    <footer class="footer">
+      <div class="nav-links">
+        <a href="de/index.html" class="nav-lang">DE</a>
+        <a href="#contact" class="btn-nav" data-contact>Contact</a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+        <svg id="icon-open-menu" width="24" height="24"><use href="#icon-menu"/></svg>
+        <svg id="icon-close-menu" width="24" height="24" style="display:none"><use href="#icon-x"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="de/index.html">Deutsch</a>
+      <a href="#contact" class="btn-nav" data-contact>Contact</a>
+    </div>
+  </nav>
+
+  <!-- ── Main ──────────────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="bg-grid"></div>
+
+      <div class="hero-stars" aria-hidden="true">
+        <span class="hero-dot hero-dot-1"></span>
+        <span class="hero-dot hero-dot-2"></span>
+        <span class="hero-dot hero-dot-3"></span>
+        <span class="hero-dot hero-dot-4"></span>
+        <span class="hero-dot hero-dot-5"></span>
+      </div>
+
       <div class="container">
-        <div class="footer__inner">
-          <p>&copy; 2026 Paladeno.</p>
-          <a href="impressum.html" class="footer__link">Imprint</a>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          TAILORED WEB DESIGN
+        </div>
+
+        <h1>
+          Built with precision. <br class="hidden-sm" />
+          <span class="text-gradient">Designed to convert.</span>
+        </h1>
+
+        <p>
+          Fast, cookie-free websites crafted for professionals. No WordPress,
+          no templates. Just clean code built for performance, privacy, and SEO.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary">
+            See What We Do
+            <svg width="16" height="16"><use href="#icon-arrow-right"/></svg>
+          </a>
+          <a href="#contact" class="btn-secondary" data-contact>Get in Touch</a>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="script.js" defer></script>
-  </body>
+    <!-- IDE Preview Section -->
+    <section class="ide-section" id="about">
+      <div class="ide-wrapper reveal">
+        <div class="ide-glow"></div>
+        <div class="ide-shell">
+
+          <div class="ide-titlebar">
+            <div class="ide-dots">
+              <div class="ide-dot dot-red"></div>
+              <div class="ide-dot dot-yellow"></div>
+              <div class="ide-dot dot-green"></div>
+            </div>
+            <div class="ide-filename">
+              <svg width="14" height="14"><use href="#icon-code2"/></svg>
+              <span>web_design.html -Paladeno</span>
+            </div>
+            <div style="width:3rem"></div>
+          </div>
+
+          <div class="ide-body">
+
+            <div class="ide-sidebar">
+              <div class="sidebar-heading">Explorer</div>
+              <div class="sidebar-file active" data-panel="design">
+                <span class="ext-html">ht</span> web_design.html
+              </div>
+              <div class="sidebar-file" data-panel="speed">
+                <span class="ext-ts">ts</span> performance.ts
+              </div>
+              <div class="sidebar-file" data-panel="privacy">
+                <span class="ext-json">cfg</span> privacy.config
+              </div>
+              <div class="sidebar-file" data-panel="seo">
+                <span class="ext-js">js</span> seo_ready.js
+              </div>
+              <div class="sidebar-file" data-panel="process">
+                <span class="ext-md">ref</span> process.md
+              </div>
+            </div>
+
+            <div class="ide-editor">
+
+              <div class="ide-mobile-tabs">
+                <button class="mobile-tab active" data-panel="design">
+                  <span class="ext-html">ht</span> web_design
+                </button>
+                <button class="mobile-tab" data-panel="speed">
+                  <span class="ext-ts">ts</span> performance
+                </button>
+                <button class="mobile-tab" data-panel="privacy">
+                  <span class="ext-json">cfg</span> privacy
+                </button>
+                <button class="mobile-tab" data-panel="seo">
+                  <span class="ext-js">js</span> seo_ready
+                </button>
+                <button class="mobile-tab" data-panel="process">
+                  <span class="ext-md">ref</span> process
+                </button>
+              </div>
+
+              <!-- Panel: Custom Web Design -->
+              <div class="code-area" data-panel="design">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Custom Web Design</span></span>
+                  <span class="line"> </span>
+                  <span class="line">No templates. No WordPress. No <span class="tok-blue">page builders</span>.</span>
+                  <span class="line">Every site is <span class="tok-green">coded</span> from scratch.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-yellow">Tailored</span> to your brand, your audience,</span>
+                  <span class="line">and your <span class="tok-yellow">business goals</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">Clean markup. <span class="tok-green">Pixel-perfect</span> design.</span>
+                  <span class="line">Built to turn visitors into <span class="tok-green">inquiries</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-gray">// HTML · CSS · JavaScript -nothing more.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: Performance -->
+              <div class="code-area" data-panel="speed" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Sub-1 Second Load Times</span></span>
+                  <span class="line"> </span>
+                  <span class="line">Lightweight code. <span class="tok-blue">Zero bloat</span>.</span>
+                  <span class="line">Your site loads <span class="tok-green">instantly</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">Faster than <span class="tok-orange">WordPress</span> or <span class="tok-orange">Wix</span>.</span>
+                  <span class="line">Fewer bounce rates. More <span class="tok-yellow">conversions</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">No heavy frameworks. No render-blocking scripts.</span>
+                  <span class="line">Just <span class="tok-green">pure speed</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-gray">// Performance is not optional -it's the default.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: Privacy -->
+              <div class="code-area" data-panel="privacy" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Zero Tracking -Cookie-Free</span></span>
+                  <span class="line"> </span>
+                  <span class="line">  <span class="tok-blue">"cookies"</span>:     <span class="tok-green">none</span></span>
+                  <span class="line">  <span class="tok-blue">"trackers"</span>:    <span class="tok-green">none</span></span>
+                  <span class="line">  <span class="tok-blue">"third_party"</span>: <span class="tok-green">none</span></span>
+                  <span class="line">  <span class="tok-blue">"banner"</span>:      <span class="tok-green">not required</span></span>
+                  <span class="line"> </span>
+                  <span class="line">Privacy-compliant <span class="tok-yellow">by design</span>,</span>
+                  <span class="line">not just a <span class="tok-orange">disclaimer</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">Your visitors trust you. <span class="tok-green">Keep it that way</span>.</span>
+                  <span class="line"><span class="tok-gray">// No hidden scripts. No surprises.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: SEO -->
+              <div class="code-area" data-panel="seo" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Search-Ready -Clean Semantics</span></span>
+                  <span class="line"> </span>
+                  <span class="line">Technical <span class="tok-blue">SEO foundation</span> built in from day one.</span>
+                  <span class="line"> </span>
+                  <span class="line">Structured so <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span> can understand</span>
+                  <span class="line">your offerings <span class="tok-green">precisely</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-orange">Semantic HTML</span>. Proper heading hierarchy.</span>
+                  <span class="line">Meta tags, Open Graph, structured data.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-green">Visibility</span> starts with the right code.</span>
+                  <span class="line"><span class="tok-gray">// Built to rank. Built to be found.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: Process -->
+              <div class="code-area" data-panel="process" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Our Process</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-blue">01</span>  <span class="tok-yellow">Understand</span></span>
+                  <span class="line">    <span class="tok-gray">Your brand, your goals, your audience.</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-blue">02</span>  <span class="tok-yellow">Design</span></span>
+                  <span class="line">    <span class="tok-gray">Clean layout. Clear structure. No clutter.</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-blue">03</span>  <span class="tok-yellow">Build &amp; Launch</span></span>
+                  <span class="line">    <span class="tok-gray">Hand-coded, tested, deployed. Done.</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-gray">// No plugins to update. No maintenance routine.</span></span>
+                </div>
+              </div>
+
+              <!-- Terminal -->
+              <div class="ide-terminal">
+                <div class="term-tabs">
+                  <span class="term-tab-active" data-term="terminal">TERMINAL</span>
+                  <span data-term="about">ABOUT</span>
+                  <span data-term="contact">CONTACT</span>
+                </div>
+
+                <div class="term-content" data-term="terminal">
+                  <div class="t-green" style="margin-top:.5rem">~/paladeno $ npm run build</div>
+                  <div class="t-gray" style="margin-top:.25rem">&gt; paladeno@1.0.0 build</div>
+                  <div class="t-gray">&gt; Compiling static assets...</div>
+                  <div class="t-blue" style="margin-top:.5rem">✓ Site compiled in 0.24s -100/100 Lighthouse</div>
+                  <div class="t-white" style="margin-top:.5rem; display:flex; align-items:center; gap:.5rem">
+                    <span class="t-green">~/paladeno $</span>
+                    <span class="term-cursor"></span>
+                  </div>
+                </div>
+
+                <div class="term-content" data-term="about" style="display:none">
+                  <div class="t-white" style="margin-top:.5rem">Web design studio based in <span class="t-blue">Austria</span>.</div>
+                  <div class="t-white">We build websites that are</div>
+                  <div class="t-white"><span class="t-green">fast</span>, <span class="t-green">private</span>, and built to <span class="t-green">last</span>.</div>
+                  <div class="t-gray" style="margin-top:.375rem">// No bloat. No trackers. No maintenance.</div>
+                </div>
+
+                <div class="term-content" data-term="contact" style="display:none">
+                  <div class="t-white" style="margin-top:.5rem"><span class="t-blue">Email</span>:   contact@paladeno.com</div>
+                  <div class="t-white"><span class="t-blue">Web</span>:     paladeno.at</div>
+                  <div class="t-white"><span class="t-blue">Based</span>:   Austria</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Paladeno. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="impressum.html">Imprint</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ── Contact Modal ──────────────────────────────────────────────────── -->
+<div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+  <div class="modal-panel">
+    <button class="modal-close" id="modal-close" aria-label="Close">
+      <svg width="20" height="20"><use href="#icon-x"/></svg>
+    </button>
+
+    <div class="modal-header">
+      <div class="hero-badge">Get in Touch</div>
+      <h2 id="modal-title">Let's talk about your project</h2>
+      <p>Send us a message and we'll get back to you shortly.</p>
+    </div>
+
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="name" required placeholder="Your name" autocomplete="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">Email</label>
+        <input type="email" id="contact-email" name="email" required placeholder="you@example.com" autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" required rows="4" placeholder="Tell us about your project..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary modal-submit">
+        Send Message
+        <svg width="16" height="16"><use href="#icon-arrow-right"/></svg>
+      </button>
+    </form>
+
+    <div class="modal-success" id="modal-success">
+      <div class="success-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3>Message sent!</h3>
+      <p>Thank you for reaching out. We'll get back to you soon.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>

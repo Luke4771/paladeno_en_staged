@@ -1,144 +1,376 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Paladeno – Webdesign für Kanzleien</title>
-    <meta
-      name="description"
-      content="Schnelle, cookie-freie Websites für Performance und SEO. Kein Bloat, keine Tracker, kein Wartungsaufwand."
-    />
-    <meta property="og:title" content="Paladeno – Webdesign für Kanzleien" />
-    <meta
-      property="og:description"
-      content="Schnelle, cookie-freie Websites für Performance und SEO."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="de" />
-    <meta property="og:url" content="https://paladeno.at/de/" />
-    <meta property="og:site_name" content="Paladeno" />
-    <meta property="og:image" content="https://paladeno.at/images/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Paladeno - Webdesign für Kanzleien" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Paladeno - Webdesign für Kanzleien" />
-    <meta name="twitter:description" content="Schnelle, cookie-freie Websites für Performance und SEO." />
-    <meta name="twitter:image" content="https://paladeno.at/images/og-image.png" />
-    <link rel="alternate" hreflang="en" href="https://paladeno.at/" />
-    <link rel="alternate" hreflang="de" href="https://paladeno.at/de/" />
-    <link rel="icon" href="../images/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
-    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
-    <link rel="icon" type="image/svg+xml" href="../images/favicon.svg?v=4" />
-    <link rel="stylesheet" href="../styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paladeno – Webdesign für Kanzleien</title>
+  <meta name="description" content="Schnelle, cookie-freie Websites für Performance und SEO. Kein Bloat, keine Tracker, kein Wartungsaufwand." />
+  <meta property="og:title" content="Paladeno – Webdesign für Kanzleien" />
+  <meta property="og:description" content="Schnelle, cookie-freie Websites für Performance und SEO." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="de" />
+  <meta property="og:url" content="https://paladeno.at/de/" />
+  <meta property="og:site_name" content="Paladeno" />
+  <meta property="og:image" content="https://paladeno.at/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Paladeno - Webdesign für Kanzleien" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Paladeno - Webdesign für Kanzleien" />
+  <meta name="twitter:description" content="Schnelle, cookie-freie Websites für Performance und SEO." />
+  <meta name="twitter:image" content="https://paladeno.at/images/og-image.png" />
+  <link rel="alternate" hreflang="en" href="https://paladeno.at/" />
+  <link rel="alternate" hreflang="de" href="https://paladeno.at/de/" />
+  <link rel="icon" href="../images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg?v=4" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
 
-    <!-- ====== Header ====== -->
-    <header class="header">
-      <nav class="header__inner container">
-        <a href="../index.html" class="logo" aria-label="Paladeno Home">
-          <img class="logo__image" src="../images/logo.svg" alt="Paladeno" />
-          <span class="logo__wordmark" aria-hidden="true">Paladeno</span>
-        </a>
-        <div class="header__actions">
-          <a href="mailto:contact@paladeno.com" class="header__contact">Kontakt</a>
-          <a href="../index.html" class="header__lang" aria-label="English version">EN</a>
-        </div>
-      </nav>
-    </header>
+<!-- SVG sprite (Lucide-style icons) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="2" y1="12" x2="22" y2="12"></line>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+  </symbol>
+  <symbol id="icon-code2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m18 16 4-4-4-4"></path>
+    <path d="m6 8-4 4 4 4"></path>
+    <path d="m14.5 4-5 16"></path>
+  </symbol>
+  <symbol id="icon-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+  </symbol>
+  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+  </symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </symbol>
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="5" y1="12" x2="19" y2="12"></line>
+    <polyline points="12 5 19 12 12 19"></polyline>
+  </symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="4" y1="12" x2="20" y2="12"></line>
+    <line x1="4" y1="6"  x2="20" y2="6"></line>
+    <line x1="4" y1="18" x2="20" y2="18"></line>
+  </symbol>
+  <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="18" y1="6"  x2="6"  y2="18"></line>
+    <line x1="6"  y1="6"  x2="18" y2="18"></line>
+  </symbol>
+</svg>
 
-    <main id="main-content">
-      <!-- ====== Hero ====== -->
-      <section class="hero section" id="hero">
-        <div class="hero-wireframe" aria-hidden="true">
-          <svg class="hero-wireframe__svg" viewBox="0 0 1600 900" preserveAspectRatio="none" focusable="false">
-            <line class="hero-wireframe__line hero-wireframe__line--primary" x1="0" y1="430" x2="1600" y2="430" />
-            <circle class="hero-wireframe__node--primary-a" cx="800" cy="430" r="1.5" />
-            <circle class="hero-wireframe__node--primary-b" cx="980" cy="430" r="1.5" />
-          </svg>
-        </div>
-        <div class="container">
-          <div class="hero__content">
-            <p class="hero__kicker hero-reveal hero-reveal--1">MASSGESCHNEIDERTES WEBDESIGN FÜR PROFESSIONALS</p>
-            <h1 class="hero-reveal hero-reveal--2">
-              <span class="hero__line-bright">Mit Präzision gebaut.</span>
-              <span class="hero__line-dim">Für den ersten Eindruck,</span>
-              <span class="hero__line-dim">der <span class="hero__keyword-gradient">bleibt.</span></span>
-            </h1>
-            <p class="hero__subtitle hero-reveal hero-reveal--3">Kein WordPress. Keine Templates. <span class="hero__subtitle-accent">Nur Du.</span></p>
-          </div>
-        </div>
-      </section>
+<div id="root-wrap">
 
-      <!-- ====== USP Stats ====== -->
-      <section class="benefits section">
-        <div class="container">
-          <div class="benefits__stats" aria-label="Kennzahlen">
-            <div class="benefits__stat is-open">
-              <span class="benefits__stat-value hero-reveal hero-reveal--4">Ladezeit unter 1s</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--5">Schlanker Code</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail benefits__detail--intro-reveal is-open" aria-hidden="false">
-                <ul class="benefits__detail-list hero-reveal hero-reveal--5">
-                  <li>Deine Seite lädt sofort. Schneller als WordPress oder Wix.</li>
-                  <li>Das senkt Absprünge und erhöht die Chance auf Anfragen.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="benefits__stat">
-              <span class="benefits__stat-value hero-reveal hero-reveal--6">Kein Tracking</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--7">Cookie-frei ab Werk</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail" aria-hidden="true">
-                <ul class="benefits__detail-list">
-                  <li>Keine versteckten Tracker oder unnötigen Drittanbieter-Skripte.</li>
-                  <li>In vielen Fällen ist kein Cookie-Banner nötig.</li>
-                  <li>Datenschutzkonform von Grund auf, nicht nur ein Disclaimer.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="benefits__stat">
-              <span class="benefits__stat-value hero-reveal hero-reveal--8">SEO-ready</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--9">Saubere Semantik</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail" aria-hidden="true">
-                <ul class="benefits__detail-list">
-                  <li>Technisches SEO-Fundament für Sichtbarkeit.</li>
-                  <li>So strukturiert, damit Google Ihre Angebote präzise verstehen kann.</li>
-                </ul>
-              </div>
-            </div>
-            <div class="benefits__stat">
-              <span class="benefits__stat-value hero-reveal hero-reveal--10">Wenig Wartung</span>
-              <span class="benefits__stat-label hero-reveal hero-reveal--11">Keine Plugin-Updates</span>
-              <svg class="benefits__chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              <div class="benefits__detail" aria-hidden="true">
-                <ul class="benefits__detail-list">
-                  <li>Keine Plugin-Ketten, die laufend gewartet werden müssen.</li>
-                  <li>Planbare Kosten ohne Wartungsroutine.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <!-- ── Background Elements ───────────────────────────────────────────── -->
+  <div id="bg-layer">
+    <div class="bg-glow"></div>
+  </div>
 
-    </main>
+  <!-- ── Navbar ────────────────────────────────────────────────────────── -->
+  <nav>
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="Paladeno Home">
+        <img class="nav-logo__image" src="../images/logo.svg" alt="" />
+        <span>Paladeno</span>
+      </a>
 
-    <!-- ====== Footer ====== -->
-    <footer class="footer">
+      <div class="nav-links">
+        <a href="../index.html" class="nav-lang">EN</a>
+        <a href="mailto:contact@paladeno.com" class="btn-nav">Kontakt</a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Menü umschalten">
+        <svg id="icon-open-menu" width="24" height="24"><use href="#icon-menu"/></svg>
+        <svg id="icon-close-menu" width="24" height="24" style="display:none"><use href="#icon-x"/></svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="../index.html">English</a>
+      <a href="mailto:contact@paladeno.com" class="btn-nav">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- ── Main ──────────────────────────────────────────────────────────── -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="bg-grid"></div>
+
+      <div class="hero-stars" aria-hidden="true">
+        <span class="hero-dot hero-dot-1"></span>
+        <span class="hero-dot hero-dot-2"></span>
+        <span class="hero-dot hero-dot-3"></span>
+        <span class="hero-dot hero-dot-4"></span>
+        <span class="hero-dot hero-dot-5"></span>
+      </div>
+
       <div class="container">
-        <div class="footer__inner">
-          <p>&copy; 2026 Paladeno.</p>
-          <a href="impressum.html" class="footer__link">Impressum</a>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          MASSGESCHNEIDERTES WEBDESIGN
+        </div>
+
+        <h1>
+          Mit Präzision gebaut. <br class="hidden-sm" />
+          <span class="text-gradient">Für den ersten Eindruck, der bleibt.</span>
+        </h1>
+
+        <p>
+          Schnelle, cookie-freie Websites für Professionals. Kein WordPress,
+          keine Templates. Nur sauberer Code für Performance, Datenschutz und SEO.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary">
+            Unsere Leistungen
+            <svg width="16" height="16"><use href="#icon-arrow-right"/></svg>
+          </a>
+          <a href="mailto:contact@paladeno.com" class="btn-secondary">Kontakt aufnehmen</a>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="../script.js" defer></script>
-  </body>
+    <!-- IDE Preview Section -->
+    <section class="ide-section" id="about">
+      <div class="ide-wrapper reveal">
+        <div class="ide-glow"></div>
+        <div class="ide-shell">
+
+          <div class="ide-titlebar">
+            <div class="ide-dots">
+              <div class="ide-dot dot-red"></div>
+              <div class="ide-dot dot-yellow"></div>
+              <div class="ide-dot dot-green"></div>
+            </div>
+            <div class="ide-filename">
+              <svg width="14" height="14"><use href="#icon-code2"/></svg>
+              <span>webdesign.html -Paladeno</span>
+            </div>
+            <div style="width:3rem"></div>
+          </div>
+
+          <div class="ide-body">
+
+            <div class="ide-sidebar">
+              <div class="sidebar-heading">Explorer</div>
+              <div class="sidebar-file active" data-panel="design">
+                <span class="ext-html">ht</span> webdesign.html
+              </div>
+              <div class="sidebar-file" data-panel="speed">
+                <span class="ext-ts">ts</span> performance.ts
+              </div>
+              <div class="sidebar-file" data-panel="privacy">
+                <span class="ext-json">cfg</span> datenschutz.config
+              </div>
+              <div class="sidebar-file" data-panel="seo">
+                <span class="ext-js">js</span> seo_ready.js
+              </div>
+              <div class="sidebar-file" data-panel="process">
+                <span class="ext-md">ref</span> prozess.md
+              </div>
+            </div>
+
+            <div class="ide-editor">
+
+              <div class="ide-mobile-tabs">
+                <button class="mobile-tab active" data-panel="design">
+                  <span class="ext-html">ht</span> webdesign
+                </button>
+                <button class="mobile-tab" data-panel="speed">
+                  <span class="ext-ts">ts</span> performance
+                </button>
+                <button class="mobile-tab" data-panel="privacy">
+                  <span class="ext-json">cfg</span> datenschutz
+                </button>
+                <button class="mobile-tab" data-panel="seo">
+                  <span class="ext-js">js</span> seo_ready
+                </button>
+                <button class="mobile-tab" data-panel="process">
+                  <span class="ext-md">ref</span> prozess
+                </button>
+              </div>
+
+              <!-- Panel: Individuelles Webdesign -->
+              <div class="code-area" data-panel="design">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Individuelles Webdesign</span></span>
+                  <span class="line"> </span>
+                  <span class="line">Keine Templates. Kein WordPress. Keine <span class="tok-blue">Baukästen</span>.</span>
+                  <span class="line">Jede Seite wird <span class="tok-green">programmiert</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-yellow">Zugeschnitten</span> auf Ihre Marke, Ihr Publikum</span>
+                  <span class="line">und Ihre <span class="tok-yellow">Geschäftsziele</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">Sauberes Markup. <span class="tok-green">Pixelgenaues</span> Design.</span>
+                  <span class="line">Gebaut, um Besucher in <span class="tok-green">Anfragen</span> zu verwandeln.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-gray">// HTML · CSS · JavaScript -mehr braucht es nicht.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: Performance -->
+              <div class="code-area" data-panel="speed" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Ladezeit unter einer Sekunde</span></span>
+                  <span class="line"> </span>
+                  <span class="line">Schlanker Code. <span class="tok-blue">Kein Ballast</span>.</span>
+                  <span class="line">Ihre Seite lädt <span class="tok-green">sofort</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">Schneller als <span class="tok-orange">WordPress</span> oder <span class="tok-orange">Wix</span>.</span>
+                  <span class="line">Weniger Absprünge. Mehr <span class="tok-yellow">Anfragen</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">Keine schweren Frameworks. Kein Render-Blocking.</span>
+                  <span class="line">Einfach <span class="tok-green">pure Geschwindigkeit</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-gray">// Performance ist kein Extra -sie ist Standard.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: Datenschutz -->
+              <div class="code-area" data-panel="privacy" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Kein Tracking -Cookie-frei</span></span>
+                  <span class="line"> </span>
+                  <span class="line">  <span class="tok-blue">"cookies"</span>:     <span class="tok-green">keine</span></span>
+                  <span class="line">  <span class="tok-blue">"tracker"</span>:     <span class="tok-green">keine</span></span>
+                  <span class="line">  <span class="tok-blue">"drittanbieter"</span>: <span class="tok-green">keine</span></span>
+                  <span class="line">  <span class="tok-blue">"banner"</span>:      <span class="tok-green">oft nicht nötig</span></span>
+                  <span class="line"> </span>
+                  <span class="line">Datenschutzkonform <span class="tok-yellow">von Grund auf</span>,</span>
+                  <span class="line">nicht nur ein <span class="tok-orange">Disclaimer</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line">Ihre Besucher vertrauen Ihnen. <span class="tok-green">So bleibt es</span>.</span>
+                  <span class="line"><span class="tok-gray">// Keine versteckten Skripte. Keine Überraschungen.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: SEO -->
+              <div class="code-area" data-panel="seo" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">SEO-ready -Saubere Semantik</span></span>
+                  <span class="line"> </span>
+                  <span class="line">Technisches <span class="tok-blue">SEO-Fundament</span> von Tag eins an.</span>
+                  <span class="line"> </span>
+                  <span class="line">So strukturiert, dass <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span></span>
+                  <span class="line">Ihre Angebote <span class="tok-green">präzise versteht</span>.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-orange">Semantisches HTML</span>. Korrekte Heading-Hierarchie.</span>
+                  <span class="line">Meta-Tags, Open Graph, strukturierte Daten.</span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-green">Sichtbarkeit</span> beginnt mit dem richtigen Code.</span>
+                  <span class="line"><span class="tok-gray">// Gebaut für Rankings. Gebaut, um gefunden zu werden.</span></span>
+                </div>
+              </div>
+
+              <!-- Panel: Prozess -->
+              <div class="code-area" data-panel="process" style="display:none">
+                <div class="line-numbers">
+                  <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span>
+                  <span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                  <span>11</span><span>12</span>
+                </div>
+                <div class="code-lines">
+                  <span class="line"><span class="tok-purple">Unser Prozess</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-blue">01</span>  <span class="tok-yellow">Verstehen</span></span>
+                  <span class="line">    <span class="tok-gray">Ihre Marke, Ihre Ziele, Ihr Publikum.</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-blue">02</span>  <span class="tok-yellow">Gestalten</span></span>
+                  <span class="line">    <span class="tok-gray">Klares Layout. Klare Struktur. Kein Ballast.</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-blue">03</span>  <span class="tok-yellow">Bauen &amp; Launchen</span></span>
+                  <span class="line">    <span class="tok-gray">Handcodiert, getestet, deployed. Fertig.</span></span>
+                  <span class="line"> </span>
+                  <span class="line"><span class="tok-gray">// Keine Plugins zum Updaten. Keine Wartungsroutine.</span></span>
+                </div>
+              </div>
+
+              <!-- Terminal -->
+              <div class="ide-terminal">
+                <div class="term-tabs">
+                  <span class="term-tab-active" data-term="terminal">TERMINAL</span>
+                  <span data-term="about">ÜBER UNS</span>
+                  <span data-term="contact">KONTAKT</span>
+                </div>
+
+                <div class="term-content" data-term="terminal">
+                  <div class="t-green" style="margin-top:.5rem">~/paladeno $ npm run build</div>
+                  <div class="t-gray" style="margin-top:.25rem">&gt; paladeno@1.0.0 build</div>
+                  <div class="t-gray">&gt; Statische Assets kompilieren...</div>
+                  <div class="t-blue" style="margin-top:.5rem">✓ Seite kompiliert in 0.24s -100/100 Lighthouse</div>
+                  <div class="t-white" style="margin-top:.5rem; display:flex; align-items:center; gap:.5rem">
+                    <span class="t-green">~/paladeno $</span>
+                    <span class="term-cursor"></span>
+                  </div>
+                </div>
+
+                <div class="term-content" data-term="about" style="display:none">
+                  <div class="t-white" style="margin-top:.5rem">Webdesign-Studio aus <span class="t-blue">Österreich</span>.</div>
+                  <div class="t-white">Wir bauen Websites, die</div>
+                  <div class="t-white"><span class="t-green">schnell</span>, <span class="t-green">privat</span> und <span class="t-green">langlebig</span> sind.</div>
+                  <div class="t-gray" style="margin-top:.375rem">// Kein Bloat. Keine Tracker. Keine Wartung.</div>
+                </div>
+
+                <div class="term-content" data-term="contact" style="display:none">
+                  <div class="t-white" style="margin-top:.5rem"><span class="t-blue">E-Mail</span>:   contact@paladeno.com</div>
+                  <div class="t-white"><span class="t-blue">Web</span>:     paladeno.at</div>
+                  <div class="t-white"><span class="t-blue">Standort</span>: Österreich</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Paladeno. Alle Rechte vorbehalten.</p>
+        <div class="footer-bottom-links">
+          <a href="impressum.html">Impressum</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script src="../script.js"></script>
+</body>
 </html>
