@@ -1,0 +1,5 @@
+# ignore Claude notes
+CLAUDE.md
+
+# other potential ignores
+*.bak

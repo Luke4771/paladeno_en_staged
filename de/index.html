@@ -22,9 +22,9 @@
   <link rel="alternate" hreflang="en" href="https://paladeno.at/" />
   <link rel="alternate" hreflang="de" href="https://paladeno.at/de/" />
   <link rel="icon" href="../images/favicon.ico" sizes="any" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
-  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+  <link rel="icon" type="image/webp" sizes="32x32" href="../images/favicon-32x32.webp" />
+  <link rel="icon" type="image/webp" sizes="16x16" href="../images/favicon-16x16.webp" />
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.webp" />
   <link rel="icon" type="image/svg+xml" href="../images/favicon.svg?v=4" />
   <link rel="stylesheet" href="../styles.css" />
 </head>
@@ -32,25 +32,10 @@
 
 <!-- SVG sprite (Lucide-style icons) -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="12" cy="12" r="10"></circle>
-    <line x1="2" y1="12" x2="22" y2="12"></line>
-    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-  </symbol>
   <symbol id="icon-code2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path d="m18 16 4-4-4-4"></path>
     <path d="m6 8-4 4 4 4"></path>
     <path d="m14.5 4-5 16"></path>
-  </symbol>
-  <symbol id="icon-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-  </symbol>
-  <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-  </symbol>
-  <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="11" cy="11" r="8"></circle>
-    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
   </symbol>
   <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -84,7 +69,6 @@
 
       <div class="nav-links">
         <a href="../index.html" class="nav-lang">EN</a>
-        <a href="mailto:contact@paladeno.com" class="btn-nav">Kontakt</a>
       </div>
 
       <button class="nav-hamburger" id="hamburger" aria-label="Menü umschalten">
@@ -95,7 +79,6 @@
 
     <div class="mobile-menu" id="mobile-menu">
       <a href="../index.html">English</a>
-      <a href="mailto:contact@paladeno.com" class="btn-nav">Kontakt</a>
     </div>
   </nav>
 
@@ -116,7 +99,6 @@
 
       <div class="container">
         <div class="hero-badge">
-          <span class="badge-dot"></span>
           MASSGESCHNEIDERTES WEBDESIGN
         </div>
 
@@ -132,10 +114,10 @@
 
         <div class="hero-btns">
           <a href="#services" class="btn-primary">
-            Unsere Leistungen
+            Leistungen
             <svg width="16" height="16"><use href="#icon-arrow-right"/></svg>
           </a>
-          <a href="mailto:contact@paladeno.com" class="btn-secondary">Kontakt aufnehmen</a>
+          <a href="mailto:contact@paladeno.com" class="btn-secondary">Kontakt</a>
         </div>
       </div>
     </section>
@@ -319,7 +301,6 @@
               <div class="ide-terminal">
                 <div class="term-tabs">
                   <span class="term-tab-active" data-term="terminal">TERMINAL</span>
-                  <span data-term="about">ÜBER UNS</span>
                   <span data-term="contact">KONTAKT</span>
                 </div>
 
@@ -332,13 +313,6 @@
                     <span class="t-green">~/paladeno $</span>
                     <span class="term-cursor"></span>
                   </div>
-                </div>
-
-                <div class="term-content" data-term="about" style="display:none">
-                  <div class="t-white" style="margin-top:.5rem">Webdesign-Studio aus <span class="t-blue">Österreich</span>.</div>
-                  <div class="t-white">Wir bauen Websites, die</div>
-                  <div class="t-white"><span class="t-green">schnell</span>, <span class="t-green">privat</span> und <span class="t-green">langlebig</span> sind.</div>
-                  <div class="t-gray" style="margin-top:.375rem">// Kein Bloat. Keine Tracker. Keine Wartung.</div>
                 </div>
 
                 <div class="term-content" data-term="contact" style="display:none">
@@ -361,7 +335,7 @@
   <footer>
     <div class="footer-inner">
       <div class="footer-bottom">
-        <p>&copy; <span id="year"></span> Paladeno. Alle Rechte vorbehalten.</p>
+        <p>&copy; <span id="year"></span> Paladeno.</p>
         <div class="footer-bottom-links">
           <a href="impressum.html">Impressum</a>
         </div>
