@@ -40,7 +40,8 @@
   - simple contact form validation
   - dynamic footer year
 - Landing pages include `script.js` at the end of `<body>`.
-- Legal pages currently do not load `script.js`.
+- `/impressum.html` also includes `script.js` to support the navbar `Let's Talk` contact modal.
+- `/de/impressum.html` currently stays static and does not load `script.js`.
 
 ## 6. i18n structure
 - Language split is path based:
