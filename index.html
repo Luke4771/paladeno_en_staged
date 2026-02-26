@@ -26,10 +26,8 @@
   <link rel="icon" type="image/webp" sizes="16x16" href="images/favicon-16x16.webp" />
   <link rel="apple-touch-icon" href="images/apple-touch-icon.webp" />
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=4" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preload" href="fonts/inter-latin-var.woff2?v=20260226" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=20260226" />
 </head>
 <body>
 
@@ -66,7 +64,7 @@
   <nav>
     <div class="nav-inner">
       <a href="index.html" class="nav-logo" aria-label="Paladeno Home">
-        <img class="nav-logo__image" src="images/logo.svg" alt="" width="256" height="256" />
+        <img class="nav-logo__image" src="images/logo.webp" alt="" width="128" height="128" />
         <span>Paladeno</span>
       </a>
 
@@ -394,6 +392,6 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="script.js?v=20260226"></script>
 </body>
 </html>
