@@ -345,6 +345,52 @@
 
 </div>
 
+<!-- ── Contact Modal ──────────────────────────────────────────────────── -->
+<div class="modal-overlay" id="contact-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+  <div class="modal-panel">
+    <button class="modal-close" id="modal-close" aria-label="Schließen">
+      <svg width="20" height="20"><use href="#icon-x"/></svg>
+    </button>
+
+    <div class="modal-header">
+      <h2 id="modal-title">Lass uns über dein Projekt sprechen</h2>
+      <p>Schreib uns eine Nachricht, und wir melden uns bald back.</p>
+    </div>
+
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="contact-name">Name</label>
+        <input type="text" id="contact-name" name="name" required placeholder="Dein Name" autocomplete="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="contact-email">E-Mail</label>
+        <input type="email" id="contact-email" name="email" required placeholder="du@beispiel.com" autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="contact-message">Nachricht</label>
+        <textarea id="contact-message" name="message" required rows="4" placeholder="Erzähl uns von deinem Projekt..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary modal-submit">
+        Nachricht senden
+        <svg width="16" height="16"><use href="#icon-arrow-right"/></svg>
+      </button>
+    </form>
+
+    <div class="modal-success" id="modal-success">
+      <div class="success-icon">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3>Nachricht gesendet!</h3>
+      <p>Danke, dass du uns kontaktiert hast. Wir melden uns bald.</p>
+    </div>
+  </div>
+</div>
+
 <script src="../script.js"></script>
 </body>
 </html>
